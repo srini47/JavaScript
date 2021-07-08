@@ -1,0 +1,13 @@
+s = "Eve knows Malayalam "
+s1 = "", s2 = ""
+for (t of s) {
+    if (t != " ") {
+        s2 = s2 + t
+        s1 = t + s1
+    }
+    else {
+        if (s1.toLowerCase() == s2.toLowerCase()) console.log(s2)
+        s1 = ""
+        s2 = ""
+    }
+}
